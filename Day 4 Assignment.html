@@ -1,0 +1,26 @@
+<style>
+.screen { height:30px;width:px; font-size:25;color:blue;text-align:right }
+</style>
+
+<center>
+N1<input type="Number" id="i1"  class="screen" ><br>
+N2<input type="Number" id="i2"  class="screen"><br>
+N3<input type="Number" id="i3"  class="screen"><br>
+<input type="button" value="Answer" class="btn"onclick="greatest()" ><br>
+<output id=out >
+
+<script>
+function greatest()
+{
+a=parseInt(i1.value);
+b=parseInt(i2.value);
+c=parseInt(i3.value);
+if(a>=b && a>=c)
+d=a
+else if(b>=a && b>=c )
+d=b
+else  
+d=c
+out.value="Greatest no. is : " +d 
+}
+</script>
